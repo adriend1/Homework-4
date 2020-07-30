@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+</head>
+<body>
+    <h1>Welcome to my coding quiz. Try to answer all the questions before the time runs out!</h1>
+    <button id = "startButton" typ = "submit">Begin Quiz</button> 
+
+    <div id="question"> <p id ="questionText"></p></div>
+    <div id="choices">
+        <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+        <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+        <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+    </div>
+    <div id="timer">
+        <div id="counter"></div>
+        <div id="timeLeft"></div>
+    </div>
+    <div id="score" style="display: none"></div>
+    <script src="script.js"></script>
+</body>
+</html>
